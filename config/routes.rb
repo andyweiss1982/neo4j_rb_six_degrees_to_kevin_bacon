@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  root 'acted_ins#index'
+
   resources :acted_ins
   resources :movies
   resources :actors
