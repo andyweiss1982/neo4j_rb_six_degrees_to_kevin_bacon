@@ -1,0 +1,4 @@
+2016-06-15 14:48:04.918+0000 INFO  Starting...
+2016-06-15 14:48:06.306+0000 INFO  Bolt enabled on localhost:7472.
+2016-06-15 14:48:09.151+0000 INFO  Started.
+2016-06-15 14:48:10.482+0000 INFO  Remote interface available at http://localhost:7474/

@@ -1,0 +1,32 @@
+<%= form_for(@acted_in) do |f| %>
+  <% if @acted_in.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@acted_in.errors.count, "error") %> prohibited this acted_in from being saved:</h2>
+
+      <ul>
+      <% @acted_in.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= label_tag :actor %>
+    <%= select_tag :actor, options_from_collection_for_select(@actors, :uuid, :name) %>
+  </div>
+
+  <div class="field">
+    <%= f.label :role %><br>
+    <%= f.text_field :role %>
+  </div>
+
+  <div class="field">
+    <%= label_tag :movie %>
+    <%= select_tag :movie, options_from_collection_for_select(@movies, :uuid, :title) %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

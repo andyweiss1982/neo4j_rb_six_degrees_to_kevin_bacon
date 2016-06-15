@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Actor:</strong>
+  <%= @acted_in.from_node.name %>
+</p>
+
+<p>
+  <strong>Role:</strong>
+  <%= @acted_in.role %>
+</p>
+
+<p>
+  <strong>Movie:</strong>
+  <%= @acted_in.to_node.title %>
+</p>
+
+<%= link_to 'Edit', edit_acted_in_path(@acted_in) %> |
+<%= link_to 'Back', acted_ins_path %>

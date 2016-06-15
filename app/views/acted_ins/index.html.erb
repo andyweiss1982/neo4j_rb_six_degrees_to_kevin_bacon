@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Performances</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Actor</th>
+      <th></th>
+      <th>Role</th>
+      <th></th>
+      <th>Movie</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @acted_ins.each do |acted_in| %>
+      <tr>
+        <td><%= acted_in.from_node.name %></td>
+        <td>acted as</td>
+        <td><%= acted_in.role %></td>
+        <td>in</td>
+        <td><%= acted_in.to_node.title %></td>
+        <td><%= link_to 'Show', acted_in %></td>
+        <td><%= link_to 'Edit', edit_acted_in_path(acted_in) %></td>
+        <td><%= link_to 'Destroy', acted_in, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Performance', new_acted_in_path %>

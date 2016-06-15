@@ -1,0 +1,2 @@
+module ActedInsHelper
+end
