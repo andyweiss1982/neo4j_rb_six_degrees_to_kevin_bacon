@@ -7,4 +7,5 @@ class WorkedWith
   type 'worked_with'
 
   property :movie, type: String
+
 end

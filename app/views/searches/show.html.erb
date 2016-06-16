@@ -1,1 +1,11 @@
-<%= @paths.inspect %>
+<h1>Shortest Paths</h1>
+
+<% @path_strings.each do |path| %>
+  <div class="path">
+  <%= path %>
+  </div>
+<% end %>
+
+<div class="no_paths">
+  <%= "No Paths" if @path_strings.empty? %>
+</div>
