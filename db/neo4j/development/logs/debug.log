@@ -1204,3 +1204,14 @@ BatchingMultipleIndexPopulator{activeTasks=1, executor=java.util.concurrent.Thre
 2016-06-16 03:07:36.462+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`acted_in`]->(n2:`Movie`) RETURN r1
 2016-06-16 03:07:49.761+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
 2016-06-16 03:07:49.763+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 03:10:45.538+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [136]:  Starting check pointing...
+2016-06-16 03:10:45.538+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [136]:  Starting store flush...
+2016-06-16 03:10:45.556+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 136 to [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2016-06-16 03:10:45.557+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 136 to [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2016-06-16 03:10:45.559+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [136]:  Store flush completed
+2016-06-16 03:10:45.559+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [136]:  Starting appending check point entry into the tx log...
+2016-06-16 03:10:45.560+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [136]:  Appending check point entry into the tx log completed
+2016-06-16 03:10:45.560+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [136]:  Check pointing completed
+2016-06-16 03:10:45.560+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-06-16 03:10:45.560+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-06-16 03:26:17.563+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1629ms.

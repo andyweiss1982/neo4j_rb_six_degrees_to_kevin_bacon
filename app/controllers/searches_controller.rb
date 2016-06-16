@@ -11,6 +11,7 @@ class SearchesController < ApplicationController
     paths = @actor_one.coworkers(:coworker, :worked_with, rel_length: :any)
       .where('coworker.name = {name}').params(name: @actor_two.name)
       .pluck(:worked_with)
+      .reject{|path_array| path_array.map{|worked_with| worked_with.to_node == @actor_one}.include?(true) }
       .sort_by(&:size).first(3)
 
     @path_strings = paths.map{|path| path_to_s(path) }
