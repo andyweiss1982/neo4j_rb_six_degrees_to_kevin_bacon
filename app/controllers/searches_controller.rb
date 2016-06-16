@@ -8,10 +8,19 @@ class SearchesController < ApplicationController
     @actor_one = Actor.find(params[:actor_one])
     @actor_two = Actor.find(params[:actor_two])
 
-    paths = @actor_one.coworkers(:coworker, :worked_with, rel_length: :any)
-      .where('coworker.name = {name}').params(name: @actor_two.name)
-      .pluck(:worked_with)
-      .sort_by(&:size).first(3)
+    paths = Neo4j::Session.current.query
+      .match(
+        "p=(a1:Actor)-[worked_w:worked_with*]->(a2:Actor)
+        WHERE a1.uuid = {actor_one}
+        AND a2.uuid = {actor_two}
+        AND ALL( n IN nodes(p)[1..-1] WHERE n.uuid <> {actor_one})"
+      ).params(
+        actor_one: @actor_one.uuid,
+        actor_two: @actor_two.uuid
+      ).order(
+        "length(p) ASC"
+      ).limit(3)
+      .pluck(:worked_w)
 
     @path_strings = paths.map{|path| path_to_s(path) }
 
