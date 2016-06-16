@@ -8,6 +8,9 @@ class Actor
 
   before_validation :standardize_name
 
+  has_many :out, :movies, rel_class: :ActedIn
+  has_many :out, :coworkers, rel_class: :WorkedWith, model_class: :Actor, unique: true
+
   def standardize_name
     self.name = name.titleize.squish
   end

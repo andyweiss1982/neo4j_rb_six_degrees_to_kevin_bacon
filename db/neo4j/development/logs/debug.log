@@ -543,3 +543,524 @@ BatchingMultipleIndexPopulator{activeTasks=1, executor=java.util.concurrent.Thre
 2016-06-15 20:14:42.524+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
 2016-06-15 20:14:42.524+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
 2016-06-15 21:44:51.018+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1846ms.
+2016-06-15 23:17:49.238+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Movie`) RETURN n ORDER BY n.uuid DESC LIMIT {limit_1}
+2016-06-15 23:17:49.256+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Movie`) RETURN n ORDER BY n.uuid DESC LIMIT {limit_1}
+2016-06-15 23:32:29.265+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Movie`) RETURN n
+2016-06-15 23:32:29.267+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Movie`) RETURN n
+2016-06-15 23:32:29.279+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n) WHERE (ID(n) = {ID_n}) WITH n OPTIONAL MATCH (n)-[r]-() DELETE n, r
+2016-06-15 23:32:29.282+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n) WHERE (ID(n) = {ID_n}) WITH n OPTIONAL MATCH (n)-[r]-() DELETE n, r
+2016-06-15 23:32:30.125+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [46]:  Starting check pointing...
+2016-06-15 23:32:30.125+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [46]:  Starting store flush...
+2016-06-15 23:32:30.151+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 46 to [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2016-06-15 23:32:30.154+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 46 to [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2016-06-15 23:32:30.160+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [46]:  Store flush completed
+2016-06-15 23:32:30.161+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [46]:  Starting appending check point entry into the tx log...
+2016-06-15 23:32:30.161+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [46]:  Appending check point entry into the tx log completed
+2016-06-15 23:32:30.161+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [46]:  Check pointing completed
+2016-06-15 23:32:30.161+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-06-15 23:32:30.161+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-06-15 23:32:30.182+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Movie(uuid) with 0 unique values in sample of avg size 0 taken from index containing 0 entries
+2016-06-15 23:32:40.185+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Actor(name) with 0 unique values in sample of avg size 0 taken from index containing 0 entries
+2016-06-15 23:32:49.548+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`acted_in`]->(n2:`Movie`) RETURN r1 ORDER BY ID(r1) DESC LIMIT {limit_1}
+2016-06-15 23:32:49.552+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`acted_in`]->(n2:`Movie`) RETURN r1 ORDER BY ID(r1) DESC LIMIT {limit_1}
+2016-06-15 23:32:50.182+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Movie(title) with 0 unique values in sample of avg size 0 taken from index containing 0 entries
+2016-06-15 23:33:00.183+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Actor(uuid) with 0 unique values in sample of avg size 0 taken from index containing 0 entries
+2016-06-15 23:52:02.491+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`acted_in`]->(n2:`Movie`) RETURN r1
+2016-06-15 23:52:02.497+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`acted_in`]->(n2:`Movie`) RETURN r1
+2016-06-15 23:52:09.264+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Actor`) RETURN n
+2016-06-15 23:52:09.265+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Actor`) RETURN n
+2016-06-15 23:52:12.835+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Movie`) RETURN n
+2016-06-15 23:52:12.837+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Movie`) RETURN n
+2016-06-15 23:59:06.741+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (result:`Movie`) WHERE (result.title = {result_title}) RETURN COUNT(result) AS count
+2016-06-15 23:59:06.746+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (result:`Movie`) WHERE (result.title = {result_title}) RETURN COUNT(result) AS count
+2016-06-15 23:59:06.785+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: CREATE (n:`Movie` {props}) RETURN ID(n)
+2016-06-15 23:59:06.787+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: CREATE (n:`Movie` {props}) RETURN ID(n)
+2016-06-15 23:59:06.848+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-15 23:59:06.850+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-15 23:59:09.575+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Movie`) RETURN n
+2016-06-15 23:59:09.576+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Movie`) RETURN n
+2016-06-15 23:59:10.227+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Movie(uuid) with 1 unique values in sample of avg size 1 taken from index containing 1 entries
+2016-06-15 23:59:10.563+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Actor`) RETURN n
+2016-06-15 23:59:10.564+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Actor`) RETURN n
+2016-06-15 23:59:10.593+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [47]:  Starting check pointing...
+2016-06-15 23:59:10.593+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [47]:  Starting store flush...
+2016-06-15 23:59:10.633+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 47 to [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2016-06-15 23:59:10.636+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 47 to [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2016-06-15 23:59:10.642+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [47]:  Store flush completed
+2016-06-15 23:59:10.642+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [47]:  Starting appending check point entry into the tx log...
+2016-06-15 23:59:10.642+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [47]:  Appending check point entry into the tx log completed
+2016-06-15 23:59:10.642+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [47]:  Check pointing completed
+2016-06-15 23:59:10.642+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-06-15 23:59:10.643+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-06-15 23:59:14.474+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (result:`Actor`) WHERE (result.name = {result_name}) RETURN COUNT(result) AS count
+2016-06-15 23:59:14.475+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (result:`Actor`) WHERE (result.name = {result_name}) RETURN COUNT(result) AS count
+2016-06-15 23:59:14.487+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: CREATE (n:`Actor` {props}) RETURN ID(n)
+2016-06-15 23:59:14.489+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: CREATE (n:`Actor` {props}) RETURN ID(n)
+2016-06-15 23:59:14.524+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Actor`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-15 23:59:14.528+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Actor`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-15 23:59:19.050+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Actor`) RETURN n
+2016-06-15 23:59:19.051+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Actor`) RETURN n
+2016-06-15 23:59:20.226+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Movie(title) with 1 unique values in sample of avg size 1 taken from index containing 1 entries
+2016-06-15 23:59:25.056+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (from_node), (to_node) WHERE (ID(from_node) = {from_node_id}) AND (ID(to_node) = {to_node_id}) CREATE (from_node)-[rel:`acted_in` {rel_create_props}]->(to_node) SET rel.`created_at` = {setter_rel_created_at}, rel.`updated_at` = {setter_rel_updated_at}, rel.`role` = {setter_rel_role} RETURN rel
+2016-06-15 23:59:25.059+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (from_node), (to_node) WHERE (ID(from_node) = {from_node_id}) AND (ID(to_node) = {to_node_id}) CREATE (from_node)-[rel:`acted_in` {rel_create_props}]->(to_node) SET rel.`created_at` = {setter_rel_created_at}, rel.`updated_at` = {setter_rel_updated_at}, rel.`role` = {setter_rel_role} RETURN rel
+2016-06-15 23:59:30.222+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Actor(name) with 1 unique values in sample of avg size 1 taken from index containing 1 entries
+2016-06-15 23:59:40.222+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Actor(uuid) with 1 unique values in sample of avg size 1 taken from index containing 1 entries
+2016-06-16 00:00:28.091+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH ()-[r]-() WHERE (ID(r) = {ID_r}) RETURN r LIMIT {limit_1}
+2016-06-16 00:00:28.093+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH ()-[r]-() WHERE (ID(r) = {ID_r}) RETURN r LIMIT {limit_1}
+2016-06-16 00:00:28.110+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n) WHERE (ID(n) = {ID_n}) RETURN n
+2016-06-16 00:00:28.111+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n) WHERE (ID(n) = {ID_n}) RETURN n
+2016-06-16 00:01:55.485+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`acted_in`]->(n2:`Movie`) RETURN r1
+2016-06-16 00:01:55.488+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`acted_in`]->(n2:`Movie`) RETURN r1
+2016-06-16 00:02:03.849+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (result:`Actor`) WHERE (result.name = {result_name}) RETURN COUNT(result) AS count
+2016-06-16 00:02:03.851+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (result:`Actor`) WHERE (result.name = {result_name}) RETURN COUNT(result) AS count
+2016-06-16 00:02:06.578+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Movie`) RETURN n
+2016-06-16 00:02:06.579+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Movie`) RETURN n
+2016-06-16 00:02:10.230+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Actor(name) with 2 unique values in sample of avg size 2 taken from index containing 2 entries
+2016-06-16 00:02:13.413+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:02:13.415+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:02:13.455+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (movie14) WHERE (ID(movie14) = {ID_movie14}) MATCH (movie14)<-[rel1:`acted_in`]-(result_actors:`Actor`) RETURN result_actors
+2016-06-16 00:02:13.457+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (movie14) WHERE (ID(movie14) = {ID_movie14}) MATCH (movie14)<-[rel1:`acted_in`]-(result_actors:`Actor`) RETURN result_actors
+2016-06-16 00:02:13.527+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH ()-[r]-() WHERE (ID(r) = {ID_r}) RETURN r LIMIT {limit_1}
+2016-06-16 00:02:13.529+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH ()-[r]-() WHERE (ID(r) = {ID_r}) RETURN r LIMIT {limit_1}
+2016-06-16 00:02:20.227+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Actor(uuid) with 2 unique values in sample of avg size 2 taken from index containing 2 entries
+2016-06-16 00:02:48.519+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (result:`Movie`) WHERE (result.title = {result_title}) RETURN COUNT(result) AS count
+2016-06-16 00:02:48.521+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (result:`Movie`) WHERE (result.title = {result_title}) RETURN COUNT(result) AS count
+2016-06-16 00:02:48.535+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: CREATE (n:`Movie` {props}) RETURN ID(n)
+2016-06-16 00:02:48.537+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: CREATE (n:`Movie` {props}) RETURN ID(n)
+2016-06-16 00:02:48.577+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:02:48.579+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:02:50.228+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Movie(uuid) with 2 unique values in sample of avg size 2 taken from index containing 2 entries
+2016-06-16 00:03:00.228+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Movie(title) with 2 unique values in sample of avg size 2 taken from index containing 2 entries
+2016-06-16 00:03:05.972+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`acted_in`]->(n2:`Movie`) RETURN r1
+2016-06-16 00:03:05.973+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`acted_in`]->(n2:`Movie`) RETURN r1
+2016-06-16 00:03:56.269+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: CREATE (n:`Actor` {props}) RETURN ID(n)
+2016-06-16 00:03:56.270+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: CREATE (n:`Actor` {props}) RETURN ID(n)
+2016-06-16 00:03:56.308+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Actor`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:03:56.310+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Actor`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:03:58.286+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n) WHERE (ID(n) = {ID_n}) RETURN n
+2016-06-16 00:03:58.287+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n) WHERE (ID(n) = {ID_n}) RETURN n
+2016-06-16 00:03:59.425+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Actor`) RETURN n
+2016-06-16 00:03:59.425+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Actor`) RETURN n
+2016-06-16 00:04:00.231+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Actor(name) with 3 unique values in sample of avg size 3 taken from index containing 3 entries
+2016-06-16 00:04:10.232+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Actor(uuid) with 3 unique values in sample of avg size 3 taken from index containing 3 entries
+2016-06-16 00:04:10.722+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [56]:  Starting check pointing...
+2016-06-16 00:04:10.722+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [56]:  Starting store flush...
+2016-06-16 00:04:10.740+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 56 to [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2016-06-16 00:04:10.743+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 56 to [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2016-06-16 00:04:10.753+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [56]:  Store flush completed
+2016-06-16 00:04:10.753+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [56]:  Starting appending check point entry into the tx log...
+2016-06-16 00:04:10.754+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [56]:  Appending check point entry into the tx log completed
+2016-06-16 00:04:10.754+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [56]:  Check pointing completed
+2016-06-16 00:04:10.754+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-06-16 00:04:10.754+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-06-16 00:04:12.224+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:04:12.225+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:04:12.248+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (from_node), (to_node) WHERE (ID(from_node) = {from_node_id}) AND (ID(to_node) = {to_node_id}) CREATE (from_node)-[rel:`acted_in` {rel_create_props}]->(to_node) SET rel.`created_at` = {setter_rel_created_at}, rel.`updated_at` = {setter_rel_updated_at}, rel.`role` = {setter_rel_role} RETURN rel
+2016-06-16 00:04:12.250+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (from_node), (to_node) WHERE (ID(from_node) = {from_node_id}) AND (ID(to_node) = {to_node_id}) CREATE (from_node)-[rel:`acted_in` {rel_create_props}]->(to_node) SET rel.`created_at` = {setter_rel_created_at}, rel.`updated_at` = {setter_rel_updated_at}, rel.`role` = {setter_rel_role} RETURN rel
+2016-06-16 00:04:12.277+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (from_node), (to_node) WHERE (ID(from_node) = {from_node_id}) AND (ID(to_node) = {to_node_id}) CREATE (from_node)-[rel:`worked_with` {rel_create_props}]->(to_node) SET rel.`created_at` = {setter_rel_created_at}, rel.`updated_at` = {setter_rel_updated_at}, rel.`movie` = {setter_rel_movie} RETURN rel
+2016-06-16 00:04:12.279+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (from_node), (to_node) WHERE (ID(from_node) = {from_node_id}) AND (ID(to_node) = {to_node_id}) CREATE (from_node)-[rel:`worked_with` {rel_create_props}]->(to_node) SET rel.`created_at` = {setter_rel_created_at}, rel.`updated_at` = {setter_rel_updated_at}, rel.`movie` = {setter_rel_movie} RETURN rel
+2016-06-16 00:05:49.792+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:05:49.794+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:05:50.236+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Movie(uuid) with 3 unique values in sample of avg size 3 taken from index containing 3 entries
+2016-06-16 00:05:58.889+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (result:`Actor`) WHERE (result.name = {result_name}) RETURN COUNT(result) AS count
+2016-06-16 00:05:58.892+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (result:`Actor`) WHERE (result.name = {result_name}) RETURN COUNT(result) AS count
+2016-06-16 00:06:00.233+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Movie(title) with 3 unique values in sample of avg size 3 taken from index containing 3 entries
+2016-06-16 00:06:03.430+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Movie`) RETURN n
+2016-06-16 00:06:03.431+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Movie`) RETURN n
+2016-06-16 00:06:10.233+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Actor(name) with 4 unique values in sample of avg size 4 taken from index containing 4 entries
+2016-06-16 00:06:12.214+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:06:12.215+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:06:12.289+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH ()-[r]-() WHERE (ID(r) = {ID_r}) RETURN r LIMIT {limit_1}
+2016-06-16 00:06:12.291+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH ()-[r]-() WHERE (ID(r) = {ID_r}) RETURN r LIMIT {limit_1}
+2016-06-16 00:06:20.232+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Actor(uuid) with 4 unique values in sample of avg size 4 taken from index containing 4 entries
+2016-06-16 00:09:10.841+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [60]:  Starting check pointing...
+2016-06-16 00:09:10.842+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [60]:  Starting store flush...
+2016-06-16 00:09:10.863+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 60 to [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2016-06-16 00:09:10.864+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 60 to [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2016-06-16 00:09:10.867+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [60]:  Store flush completed
+2016-06-16 00:09:10.867+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [60]:  Starting appending check point entry into the tx log...
+2016-06-16 00:09:10.867+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [60]:  Appending check point entry into the tx log completed
+2016-06-16 00:09:10.867+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [60]:  Check pointing completed
+2016-06-16 00:09:10.867+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-06-16 00:09:10.867+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-06-16 00:15:13.217+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n) WHERE (ID(n) = {ID_n}) WITH n OPTIONAL MATCH (n)-[r]-() DELETE n, r
+2016-06-16 00:15:13.221+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n) WHERE (ID(n) = {ID_n}) WITH n OPTIONAL MATCH (n)-[r]-() DELETE n, r
+2016-06-16 00:15:13.305+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Movie`) RETURN n
+2016-06-16 00:15:13.307+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Movie`) RETURN n
+2016-06-16 00:15:20.248+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Movie(uuid) with 0 unique values in sample of avg size 0 taken from index containing 0 entries
+2016-06-16 00:15:20.981+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [67]:  Starting check pointing...
+2016-06-16 00:15:20.981+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [67]:  Starting store flush...
+2016-06-16 00:15:20.991+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 67 to [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2016-06-16 00:15:20.992+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 67 to [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2016-06-16 00:15:20.994+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [67]:  Store flush completed
+2016-06-16 00:15:20.994+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [67]:  Starting appending check point entry into the tx log...
+2016-06-16 00:15:20.994+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [67]:  Appending check point entry into the tx log completed
+2016-06-16 00:15:20.994+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [67]:  Check pointing completed
+2016-06-16 00:15:20.994+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-06-16 00:15:20.994+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-06-16 00:15:22.078+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Actor`) RETURN n
+2016-06-16 00:15:22.079+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Actor`) RETURN n
+2016-06-16 00:15:28.072+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (result:`Actor`) WHERE (result.name = {result_name}) RETURN COUNT(result) AS count
+2016-06-16 00:15:28.073+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (result:`Actor`) WHERE (result.name = {result_name}) RETURN COUNT(result) AS count
+2016-06-16 00:15:28.083+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: CREATE (n:`Actor` {props}) RETURN ID(n)
+2016-06-16 00:15:28.084+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: CREATE (n:`Actor` {props}) RETURN ID(n)
+2016-06-16 00:15:28.113+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Actor`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:15:28.116+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Actor`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:15:30.247+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Actor(name) with 1 unique values in sample of avg size 1 taken from index containing 1 entries
+2016-06-16 00:15:30.268+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Movie`) RETURN n
+2016-06-16 00:15:30.269+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Movie`) RETURN n
+2016-06-16 00:15:34.973+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (result:`Movie`) WHERE (result.title = {result_title}) RETURN COUNT(result) AS count
+2016-06-16 00:15:34.974+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (result:`Movie`) WHERE (result.title = {result_title}) RETURN COUNT(result) AS count
+2016-06-16 00:15:34.982+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: CREATE (n:`Movie` {props}) RETURN ID(n)
+2016-06-16 00:15:34.983+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: CREATE (n:`Movie` {props}) RETURN ID(n)
+2016-06-16 00:15:35.010+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:15:35.011+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:15:39.295+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Actor`) RETURN n
+2016-06-16 00:15:39.296+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Actor`) RETURN n
+2016-06-16 00:15:40.246+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Movie(title) with 1 unique values in sample of avg size 1 taken from index containing 1 entries
+2016-06-16 00:15:41.198+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`acted_in`]->(n2:`Movie`) RETURN r1
+2016-06-16 00:15:41.198+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`acted_in`]->(n2:`Movie`) RETURN r1
+2016-06-16 00:15:42.506+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Movie`) RETURN n
+2016-06-16 00:15:42.506+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Movie`) RETURN n
+2016-06-16 00:15:49.676+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (from_node), (to_node) WHERE (ID(from_node) = {from_node_id}) AND (ID(to_node) = {to_node_id}) CREATE (from_node)-[rel:`acted_in` {rel_create_props}]->(to_node) SET rel.`created_at` = {setter_rel_created_at}, rel.`updated_at` = {setter_rel_updated_at}, rel.`role` = {setter_rel_role} RETURN rel
+2016-06-16 00:15:49.678+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (from_node), (to_node) WHERE (ID(from_node) = {from_node_id}) AND (ID(to_node) = {to_node_id}) CREATE (from_node)-[rel:`acted_in` {rel_create_props}]->(to_node) SET rel.`created_at` = {setter_rel_created_at}, rel.`updated_at` = {setter_rel_updated_at}, rel.`role` = {setter_rel_role} RETURN rel
+2016-06-16 00:15:49.724+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH ()-[r]-() WHERE (ID(r) = {ID_r}) RETURN r LIMIT {limit_1}
+2016-06-16 00:15:49.726+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH ()-[r]-() WHERE (ID(r) = {ID_r}) RETURN r LIMIT {limit_1}
+2016-06-16 00:15:49.740+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n) WHERE (ID(n) = {ID_n}) RETURN n
+2016-06-16 00:15:49.741+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n) WHERE (ID(n) = {ID_n}) RETURN n
+2016-06-16 00:15:50.251+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Actor(uuid) with 1 unique values in sample of avg size 1 taken from index containing 1 entries
+2016-06-16 00:15:58.095+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (result:`Actor`) WHERE (result.name = {result_name}) RETURN COUNT(result) AS count
+2016-06-16 00:15:58.097+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (result:`Actor`) WHERE (result.name = {result_name}) RETURN COUNT(result) AS count
+2016-06-16 00:15:58.106+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: CREATE (n:`Actor` {props}) RETURN ID(n)
+2016-06-16 00:15:58.107+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: CREATE (n:`Actor` {props}) RETURN ID(n)
+2016-06-16 00:15:58.142+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Actor`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:15:58.144+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Actor`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:16:00.106+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`acted_in`]->(n2:`Movie`) RETURN r1
+2016-06-16 00:16:00.108+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`acted_in`]->(n2:`Movie`) RETURN r1
+2016-06-16 00:16:00.248+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Movie(uuid) with 1 unique values in sample of avg size 1 taken from index containing 1 entries
+2016-06-16 00:16:10.249+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Actor(name) with 2 unique values in sample of avg size 2 taken from index containing 2 entries
+2016-06-16 00:16:11.336+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:16:11.338+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:16:11.362+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (movie22) WHERE (ID(movie22) = {ID_movie22}) MATCH (movie22)<-[rel1:`acted_in`]-(result_actors:`Actor`) RETURN result_actors
+2016-06-16 00:16:11.364+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (movie22) WHERE (ID(movie22) = {ID_movie22}) MATCH (movie22)<-[rel1:`acted_in`]-(result_actors:`Actor`) RETURN result_actors
+2016-06-16 00:16:11.411+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH ()-[r]-() WHERE (ID(r) = {ID_r}) RETURN r LIMIT {limit_1}
+2016-06-16 00:16:11.412+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH ()-[r]-() WHERE (ID(r) = {ID_r}) RETURN r LIMIT {limit_1}
+2016-06-16 00:16:20.249+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Actor(uuid) with 2 unique values in sample of avg size 2 taken from index containing 2 entries
+2016-06-16 00:16:25.280+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (result:`Movie`) WHERE (result.title = {result_title}) RETURN COUNT(result) AS count
+2016-06-16 00:16:25.281+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (result:`Movie`) WHERE (result.title = {result_title}) RETURN COUNT(result) AS count
+2016-06-16 00:16:25.290+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: CREATE (n:`Movie` {props}) RETURN ID(n)
+2016-06-16 00:16:25.292+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: CREATE (n:`Movie` {props}) RETURN ID(n)
+2016-06-16 00:16:25.333+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:16:25.335+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:16:30.251+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Movie(uuid) with 2 unique values in sample of avg size 2 taken from index containing 2 entries
+2016-06-16 00:16:40.249+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Movie(title) with 2 unique values in sample of avg size 2 taken from index containing 2 entries
+2016-06-16 00:16:59.683+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`acted_in`]->(n2:`Movie`) RETURN r1
+2016-06-16 00:16:59.684+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`acted_in`]->(n2:`Movie`) RETURN r1
+2016-06-16 00:16:59.698+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n) WHERE (ID(n) = {ID_n}) RETURN n
+2016-06-16 00:16:59.699+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n) WHERE (ID(n) = {ID_n}) RETURN n
+2016-06-16 00:17:00.249+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Actor(name) with 3 unique values in sample of avg size 3 taken from index containing 3 entries
+2016-06-16 00:17:01.125+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Actor`) RETURN n
+2016-06-16 00:17:01.126+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Actor`) RETURN n
+2016-06-16 00:17:01.132+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Movie`) RETURN n
+2016-06-16 00:17:01.133+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Movie`) RETURN n
+2016-06-16 00:17:10.249+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Actor(uuid) with 3 unique values in sample of avg size 3 taken from index containing 3 entries
+2016-06-16 00:17:10.466+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:17:10.467+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:17:10.488+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (from_node), (to_node) WHERE (ID(from_node) = {from_node_id}) AND (ID(to_node) = {to_node_id}) CREATE (from_node)-[rel:`acted_in` {rel_create_props}]->(to_node) SET rel.`created_at` = {setter_rel_created_at}, rel.`updated_at` = {setter_rel_updated_at}, rel.`role` = {setter_rel_role} RETURN rel
+2016-06-16 00:17:10.490+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (from_node), (to_node) WHERE (ID(from_node) = {from_node_id}) AND (ID(to_node) = {to_node_id}) CREATE (from_node)-[rel:`acted_in` {rel_create_props}]->(to_node) SET rel.`created_at` = {setter_rel_created_at}, rel.`updated_at` = {setter_rel_updated_at}, rel.`role` = {setter_rel_role} RETURN rel
+2016-06-16 00:20:21.078+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [76]:  Starting check pointing...
+2016-06-16 00:20:21.079+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [76]:  Starting store flush...
+2016-06-16 00:20:21.100+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 76 to [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2016-06-16 00:20:21.101+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 76 to [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2016-06-16 00:20:21.104+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [76]:  Store flush completed
+2016-06-16 00:20:21.104+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [76]:  Starting appending check point entry into the tx log...
+2016-06-16 00:20:21.105+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [76]:  Appending check point entry into the tx log completed
+2016-06-16 00:20:21.105+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [76]:  Check pointing completed
+2016-06-16 00:20:21.105+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-06-16 00:20:21.105+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-06-16 00:25:48.603+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n) WHERE (ID(n) = {ID_n}) WITH n OPTIONAL MATCH (n)-[r]-() DELETE n, r
+2016-06-16 00:25:48.605+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n) WHERE (ID(n) = {ID_n}) WITH n OPTIONAL MATCH (n)-[r]-() DELETE n, r
+2016-06-16 00:25:48.670+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Movie`) RETURN n
+2016-06-16 00:25:48.672+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Movie`) RETURN n
+2016-06-16 00:25:50.263+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Movie(uuid) with 0 unique values in sample of avg size 0 taken from index containing 0 entries
+2016-06-16 00:25:51.201+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [81]:  Starting check pointing...
+2016-06-16 00:25:51.201+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [81]:  Starting store flush...
+2016-06-16 00:25:51.208+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 81 to [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2016-06-16 00:25:51.209+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 81 to [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2016-06-16 00:25:51.210+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [81]:  Store flush completed
+2016-06-16 00:25:51.210+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [81]:  Starting appending check point entry into the tx log...
+2016-06-16 00:25:51.211+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [81]:  Appending check point entry into the tx log completed
+2016-06-16 00:25:51.211+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [81]:  Check pointing completed
+2016-06-16 00:25:51.211+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-06-16 00:25:51.211+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-06-16 00:26:00.263+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Actor(name) with 0 unique values in sample of avg size 0 taken from index containing 0 entries
+2016-06-16 00:26:07.973+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Movie`) RETURN n
+2016-06-16 00:26:07.974+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Movie`) RETURN n
+2016-06-16 00:26:10.265+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Movie(title) with 0 unique values in sample of avg size 0 taken from index containing 0 entries
+2016-06-16 00:26:13.162+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (result:`Movie`) WHERE (result.title = {result_title}) RETURN COUNT(result) AS count
+2016-06-16 00:26:13.164+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (result:`Movie`) WHERE (result.title = {result_title}) RETURN COUNT(result) AS count
+2016-06-16 00:26:13.172+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: CREATE (n:`Movie` {props}) RETURN ID(n)
+2016-06-16 00:26:13.173+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: CREATE (n:`Movie` {props}) RETURN ID(n)
+2016-06-16 00:26:13.204+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:26:13.206+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:26:14.630+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Actor`) RETURN n
+2016-06-16 00:26:14.631+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Actor`) RETURN n
+2016-06-16 00:26:20.263+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Actor(uuid) with 0 unique values in sample of avg size 0 taken from index containing 0 entries
+2016-06-16 00:26:20.637+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (result:`Actor`) WHERE (result.name = {result_name}) RETURN COUNT(result) AS count
+2016-06-16 00:26:20.639+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (result:`Actor`) WHERE (result.name = {result_name}) RETURN COUNT(result) AS count
+2016-06-16 00:26:24.757+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`acted_in`]->(n2:`Movie`) RETURN r1
+2016-06-16 00:26:24.758+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`acted_in`]->(n2:`Movie`) RETURN r1
+2016-06-16 00:26:26.917+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Actor`) RETURN n
+2016-06-16 00:26:26.918+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Actor`) RETURN n
+2016-06-16 00:26:26.930+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Movie`) RETURN n
+2016-06-16 00:26:26.931+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Movie`) RETURN n
+2016-06-16 00:26:30.264+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Movie(uuid) with 1 unique values in sample of avg size 1 taken from index containing 1 entries
+2016-06-16 00:26:30.979+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (from_node), (to_node) WHERE (ID(from_node) = {from_node_id}) AND (ID(to_node) = {to_node_id}) CREATE (from_node)-[rel:`acted_in` {rel_create_props}]->(to_node) SET rel.`created_at` = {setter_rel_created_at}, rel.`updated_at` = {setter_rel_updated_at}, rel.`role` = {setter_rel_role} RETURN rel
+2016-06-16 00:26:30.981+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (from_node), (to_node) WHERE (ID(from_node) = {from_node_id}) AND (ID(to_node) = {to_node_id}) CREATE (from_node)-[rel:`acted_in` {rel_create_props}]->(to_node) SET rel.`created_at` = {setter_rel_created_at}, rel.`updated_at` = {setter_rel_updated_at}, rel.`role` = {setter_rel_role} RETURN rel
+2016-06-16 00:26:31.034+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH ()-[r]-() WHERE (ID(r) = {ID_r}) RETURN r LIMIT {limit_1}
+2016-06-16 00:26:31.036+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH ()-[r]-() WHERE (ID(r) = {ID_r}) RETURN r LIMIT {limit_1}
+2016-06-16 00:26:31.051+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n) WHERE (ID(n) = {ID_n}) RETURN n
+2016-06-16 00:26:31.052+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n) WHERE (ID(n) = {ID_n}) RETURN n
+2016-06-16 00:26:38.921+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (result:`Actor`) WHERE (result.name = {result_name}) RETURN COUNT(result) AS count
+2016-06-16 00:26:38.923+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (result:`Actor`) WHERE (result.name = {result_name}) RETURN COUNT(result) AS count
+2016-06-16 00:26:39.972+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`acted_in`]->(n2:`Movie`) RETURN r1
+2016-06-16 00:26:39.974+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`acted_in`]->(n2:`Movie`) RETURN r1
+2016-06-16 00:26:40.264+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Movie(title) with 1 unique values in sample of avg size 1 taken from index containing 1 entries
+2016-06-16 00:26:45.598+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:26:45.600+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:26:45.625+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (movie26) WHERE (ID(movie26) = {ID_movie26}) MATCH (movie26)<-[rel1:`acted_in`]-(result_actors:`Actor`) RETURN result_actors
+2016-06-16 00:26:45.627+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (movie26) WHERE (ID(movie26) = {ID_movie26}) MATCH (movie26)<-[rel1:`acted_in`]-(result_actors:`Actor`) RETURN result_actors
+2016-06-16 00:26:50.264+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Actor(name) with 2 unique values in sample of avg size 2 taken from index containing 2 entries
+2016-06-16 00:27:00.264+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Actor(uuid) with 2 unique values in sample of avg size 2 taken from index containing 2 entries
+2016-06-16 00:27:03.322+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (result_actor:`Actor`) WHERE (result_actor.name = {result_actor_name}) RETURN result_actor ORDER BY result_actor.uuid LIMIT {limit_1}
+2016-06-16 00:27:03.323+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (result_actor:`Actor`) WHERE (result_actor.name = {result_actor_name}) RETURN result_actor ORDER BY result_actor.uuid LIMIT {limit_1}
+2016-06-16 00:30:51.296+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [86]:  Starting check pointing...
+2016-06-16 00:30:51.297+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [86]:  Starting store flush...
+2016-06-16 00:30:51.314+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 86 to [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2016-06-16 00:30:51.315+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 86 to [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2016-06-16 00:30:51.318+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [86]:  Store flush completed
+2016-06-16 00:30:51.318+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [86]:  Starting appending check point entry into the tx log...
+2016-06-16 00:30:51.319+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [86]:  Appending check point entry into the tx log completed
+2016-06-16 00:30:51.319+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [86]:  Check pointing completed
+2016-06-16 00:30:51.319+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-06-16 00:30:51.319+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-06-16 00:33:32.231+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Actor`) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:33:32.234+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Actor`) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:36:33.304+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`acted_in`]->(n2:`Movie`) RETURN r1 ORDER BY ID(r1) DESC LIMIT {limit_1}
+2016-06-16 00:36:33.306+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`acted_in`]->(n2:`Movie`) RETURN r1 ORDER BY ID(r1) DESC LIMIT {limit_1}
+2016-06-16 00:42:31.177+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n) WHERE (ID(n) = {ID_n}) WITH n OPTIONAL MATCH (n)-[r]-() DELETE n, r
+2016-06-16 00:42:31.180+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n) WHERE (ID(n) = {ID_n}) WITH n OPTIONAL MATCH (n)-[r]-() DELETE n, r
+2016-06-16 00:42:31.517+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [88]:  Starting check pointing...
+2016-06-16 00:42:31.517+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [88]:  Starting store flush...
+2016-06-16 00:42:31.527+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 88 to [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2016-06-16 00:42:31.528+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 88 to [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2016-06-16 00:42:31.530+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [88]:  Store flush completed
+2016-06-16 00:42:31.530+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [88]:  Starting appending check point entry into the tx log...
+2016-06-16 00:42:31.530+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [88]:  Appending check point entry into the tx log completed
+2016-06-16 00:42:31.530+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [88]:  Check pointing completed
+2016-06-16 00:42:31.530+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-06-16 00:42:31.530+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-06-16 00:42:35.713+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n) WHERE (ID(n) = {ID_n}) WITH n OPTIONAL MATCH (n)-[r]-() DELETE n, r
+2016-06-16 00:42:35.715+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n) WHERE (ID(n) = {ID_n}) WITH n OPTIONAL MATCH (n)-[r]-() DELETE n, r
+2016-06-16 00:42:40.288+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Movie(uuid) with 0 unique values in sample of avg size 0 taken from index containing 0 entries
+2016-06-16 00:42:50.290+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Actor(name) with 0 unique values in sample of avg size 0 taken from index containing 0 entries
+2016-06-16 00:43:00.288+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Movie(title) with 0 unique values in sample of avg size 0 taken from index containing 0 entries
+2016-06-16 00:43:10.289+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Actor(uuid) with 0 unique values in sample of avg size 0 taken from index containing 0 entries
+2016-06-16 00:44:37.498+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Actor`) RETURN n
+2016-06-16 00:44:37.500+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Actor`) RETURN n
+2016-06-16 00:46:14.880+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Movie`) RETURN n
+2016-06-16 00:46:14.881+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Movie`) RETURN n
+2016-06-16 00:46:22.371+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:46:22.373+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:46:23.988+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Actor`) RETURN n
+2016-06-16 00:46:23.991+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Actor`) RETURN n
+2016-06-16 00:46:27.390+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (result:`Actor`) WHERE (result.name = {result_name}) RETURN COUNT(result) AS count
+2016-06-16 00:46:27.391+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (result:`Actor`) WHERE (result.name = {result_name}) RETURN COUNT(result) AS count
+2016-06-16 00:46:28.609+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`acted_in`]->(n2:`Movie`) RETURN r1
+2016-06-16 00:46:28.611+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`acted_in`]->(n2:`Movie`) RETURN r1
+2016-06-16 00:46:29.571+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Actor`) RETURN n
+2016-06-16 00:46:29.572+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Actor`) RETURN n
+2016-06-16 00:46:29.578+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Movie`) RETURN n
+2016-06-16 00:46:29.579+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Movie`) RETURN n
+2016-06-16 00:46:30.293+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Movie(uuid) with 1 unique values in sample of avg size 1 taken from index containing 1 entries
+2016-06-16 00:46:40.296+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Actor(name) with 1 unique values in sample of avg size 1 taken from index containing 1 entries
+2016-06-16 00:46:50.295+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Movie(title) with 1 unique values in sample of avg size 1 taken from index containing 1 entries
+2016-06-16 00:47:00.295+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Actor(uuid) with 1 unique values in sample of avg size 1 taken from index containing 1 entries
+2016-06-16 00:47:05.599+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (result:`Actor`) WHERE (result.name = {result_name}) RETURN COUNT(result) AS count
+2016-06-16 00:47:05.600+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (result:`Actor`) WHERE (result.name = {result_name}) RETURN COUNT(result) AS count
+2016-06-16 00:47:07.092+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`acted_in`]->(n2:`Movie`) RETURN r1
+2016-06-16 00:47:07.094+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`acted_in`]->(n2:`Movie`) RETURN r1
+2016-06-16 00:47:10.294+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Actor(name) with 2 unique values in sample of avg size 2 taken from index containing 2 entries
+2016-06-16 00:47:14.345+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:47:14.347+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:47:14.378+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (movie29) WHERE (ID(movie29) = {ID_movie29}) MATCH (movie29)<-[rel1:`acted_in`]-(result_actors:`Actor`) RETURN result_actors
+2016-06-16 00:47:14.380+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (movie29) WHERE (ID(movie29) = {ID_movie29}) MATCH (movie29)<-[rel1:`acted_in`]-(result_actors:`Actor`) RETURN result_actors
+2016-06-16 00:47:14.419+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH ()-[r]-() WHERE (ID(r) = {ID_r}) RETURN r LIMIT {limit_1}
+2016-06-16 00:47:14.420+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH ()-[r]-() WHERE (ID(r) = {ID_r}) RETURN r LIMIT {limit_1}
+2016-06-16 00:47:20.295+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Actor(uuid) with 2 unique values in sample of avg size 2 taken from index containing 2 entries
+2016-06-16 00:47:27.889+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`worked_with`]->(n2:`Actor`) RETURN r1
+2016-06-16 00:47:27.891+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`worked_with`]->(n2:`Actor`) RETURN r1
+2016-06-16 00:47:31.624+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [94]:  Starting check pointing...
+2016-06-16 00:47:31.625+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [94]:  Starting store flush...
+2016-06-16 00:47:31.641+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 94 to [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2016-06-16 00:47:31.642+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 94 to [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2016-06-16 00:47:31.645+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [94]:  Store flush completed
+2016-06-16 00:47:31.645+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [94]:  Starting appending check point entry into the tx log...
+2016-06-16 00:47:31.645+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [94]:  Appending check point entry into the tx log completed
+2016-06-16 00:47:31.645+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [94]:  Check pointing completed
+2016-06-16 00:47:31.645+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-06-16 00:47:31.646+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-06-16 00:51:27.291+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n) WHERE (ID(n) = {ID_n}) WITH n OPTIONAL MATCH (n)-[r]-() DELETE n, r
+2016-06-16 00:51:27.299+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n) WHERE (ID(n) = {ID_n}) WITH n OPTIONAL MATCH (n)-[r]-() DELETE n, r
+2016-06-16 00:51:30.304+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Actor(name) with 0 unique values in sample of avg size 0 taken from index containing 0 entries
+2016-06-16 00:51:30.466+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n) WHERE (ID(n) = {ID_n}) WITH n OPTIONAL MATCH (n)-[r]-() DELETE n, r
+2016-06-16 00:51:30.468+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n) WHERE (ID(n) = {ID_n}) WITH n OPTIONAL MATCH (n)-[r]-() DELETE n, r
+2016-06-16 00:51:37.975+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`acted_in`]->(n2:`Movie`) RETURN r1
+2016-06-16 00:51:37.977+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`acted_in`]->(n2:`Movie`) RETURN r1
+2016-06-16 00:51:40.302+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Actor(uuid) with 0 unique values in sample of avg size 0 taken from index containing 0 entries
+2016-06-16 00:51:40.610+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Movie`) RETURN n
+2016-06-16 00:51:40.611+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Movie`) RETURN n
+2016-06-16 00:51:47.914+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:51:47.915+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:51:49.291+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Actor`) RETURN n
+2016-06-16 00:51:49.291+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Actor`) RETURN n
+2016-06-16 00:51:50.304+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Movie(uuid) with 1 unique values in sample of avg size 1 taken from index containing 1 entries
+2016-06-16 00:51:52.382+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (result:`Actor`) WHERE (result.name = {result_name}) RETURN COUNT(result) AS count
+2016-06-16 00:51:52.383+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (result:`Actor`) WHERE (result.name = {result_name}) RETURN COUNT(result) AS count
+2016-06-16 00:51:54.501+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Actor`) RETURN n
+2016-06-16 00:51:54.502+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Actor`) RETURN n
+2016-06-16 00:51:54.508+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Movie`) RETURN n
+2016-06-16 00:51:54.508+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Movie`) RETURN n
+2016-06-16 00:51:58.473+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH ()-[r]-() WHERE (ID(r) = {ID_r}) RETURN r LIMIT {limit_1}
+2016-06-16 00:51:58.474+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH ()-[r]-() WHERE (ID(r) = {ID_r}) RETURN r LIMIT {limit_1}
+2016-06-16 00:52:00.303+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Movie(title) with 1 unique values in sample of avg size 1 taken from index containing 1 entries
+2016-06-16 00:52:05.317+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (result:`Actor`) WHERE (result.name = {result_name}) RETURN COUNT(result) AS count
+2016-06-16 00:52:05.318+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (result:`Actor`) WHERE (result.name = {result_name}) RETURN COUNT(result) AS count
+2016-06-16 00:52:07.360+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`acted_in`]->(n2:`Movie`) RETURN r1
+2016-06-16 00:52:07.362+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`acted_in`]->(n2:`Movie`) RETURN r1
+2016-06-16 00:52:10.305+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Actor(name) with 2 unique values in sample of avg size 2 taken from index containing 2 entries
+2016-06-16 00:52:13.999+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:52:14.000+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:52:14.024+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (movie32) WHERE (ID(movie32) = {ID_movie32}) MATCH (movie32)<-[rel1:`acted_in`]-(result_actors:`Actor`) RETURN result_actors
+2016-06-16 00:52:14.026+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (movie32) WHERE (ID(movie32) = {ID_movie32}) MATCH (movie32)<-[rel1:`acted_in`]-(result_actors:`Actor`) RETURN result_actors
+2016-06-16 00:52:20.304+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Actor(uuid) with 2 unique values in sample of avg size 2 taken from index containing 2 entries
+2016-06-16 00:52:31.731+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [102]:  Starting check pointing...
+2016-06-16 00:52:31.732+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [102]:  Starting store flush...
+2016-06-16 00:52:31.767+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 102 to [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2016-06-16 00:52:31.770+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 102 to [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2016-06-16 00:52:31.776+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [102]:  Store flush completed
+2016-06-16 00:52:31.776+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [102]:  Starting appending check point entry into the tx log...
+2016-06-16 00:52:31.777+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [102]:  Appending check point entry into the tx log completed
+2016-06-16 00:52:31.777+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [102]:  Check pointing completed
+2016-06-16 00:52:31.777+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-06-16 00:52:31.777+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-06-16 00:53:16.258+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`worked_with`]->(n2:`Actor`) RETURN r1
+2016-06-16 00:53:16.260+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`worked_with`]->(n2:`Actor`) RETURN r1
+2016-06-16 00:53:50.668+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n) WHERE (ID(n) = {ID_n}) WITH n OPTIONAL MATCH (n)-[r]-() DELETE n, r
+2016-06-16 00:53:50.671+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n) WHERE (ID(n) = {ID_n}) WITH n OPTIONAL MATCH (n)-[r]-() DELETE n, r
+2016-06-16 00:53:53.712+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n) WHERE (ID(n) = {ID_n}) WITH n OPTIONAL MATCH (n)-[r]-() DELETE n, r
+2016-06-16 00:53:53.714+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n) WHERE (ID(n) = {ID_n}) WITH n OPTIONAL MATCH (n)-[r]-() DELETE n, r
+2016-06-16 00:53:59.334+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH ()-[r]-() WHERE (ID(r) = {ID_r}) RETURN r LIMIT {limit_1}
+2016-06-16 00:53:59.335+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH ()-[r]-() WHERE (ID(r) = {ID_r}) RETURN r LIMIT {limit_1}
+2016-06-16 00:54:00.307+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Movie(uuid) with 0 unique values in sample of avg size 0 taken from index containing 0 entries
+2016-06-16 00:54:04.606+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Movie`) RETURN n
+2016-06-16 00:54:04.607+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Movie`) RETURN n
+2016-06-16 00:54:09.269+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:54:09.271+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:54:10.304+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Actor(name) with 0 unique values in sample of avg size 0 taken from index containing 0 entries
+2016-06-16 00:54:13.399+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Actor`) RETURN n
+2016-06-16 00:54:13.400+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Actor`) RETURN n
+2016-06-16 00:54:16.959+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (result:`Actor`) WHERE (result.name = {result_name}) RETURN COUNT(result) AS count
+2016-06-16 00:54:16.960+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (result:`Actor`) WHERE (result.name = {result_name}) RETURN COUNT(result) AS count
+2016-06-16 00:54:18.504+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`acted_in`]->(n2:`Movie`) RETURN r1
+2016-06-16 00:54:18.505+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`acted_in`]->(n2:`Movie`) RETURN r1
+2016-06-16 00:54:19.351+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Actor`) RETURN n
+2016-06-16 00:54:19.352+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Actor`) RETURN n
+2016-06-16 00:54:19.358+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Movie`) RETURN n
+2016-06-16 00:54:19.359+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Movie`) RETURN n
+2016-06-16 00:54:20.305+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Movie(title) with 1 unique values in sample of avg size 1 taken from index containing 1 entries
+2016-06-16 00:54:22.233+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH ()-[r]-() WHERE (ID(r) = {ID_r}) RETURN r LIMIT {limit_1}
+2016-06-16 00:54:22.234+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH ()-[r]-() WHERE (ID(r) = {ID_r}) RETURN r LIMIT {limit_1}
+2016-06-16 00:54:28.095+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (result:`Actor`) WHERE (result.name = {result_name}) RETURN COUNT(result) AS count
+2016-06-16 00:54:28.096+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (result:`Actor`) WHERE (result.name = {result_name}) RETURN COUNT(result) AS count
+2016-06-16 00:54:29.697+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`acted_in`]->(n2:`Movie`) RETURN r1
+2016-06-16 00:54:29.698+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`acted_in`]->(n2:`Movie`) RETURN r1
+2016-06-16 00:54:30.307+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Actor(uuid) with 2 unique values in sample of avg size 2 taken from index containing 2 entries
+2016-06-16 00:54:39.850+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:54:39.851+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 00:54:39.878+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (movie35) WHERE (ID(movie35) = {ID_movie35}) MATCH (movie35)<-[rel1:`acted_in`]-(result_actors:`Actor`) RETURN result_actors
+2016-06-16 00:54:39.879+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (movie35) WHERE (ID(movie35) = {ID_movie35}) MATCH (movie35)<-[rel1:`acted_in`]-(result_actors:`Actor`) RETURN result_actors
+2016-06-16 00:54:39.916+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH ()-[r]-() WHERE (ID(r) = {ID_r}) RETURN r LIMIT {limit_1}
+2016-06-16 00:54:39.917+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH ()-[r]-() WHERE (ID(r) = {ID_r}) RETURN r LIMIT {limit_1}
+2016-06-16 00:54:40.308+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Movie(uuid) with 1 unique values in sample of avg size 1 taken from index containing 1 entries
+2016-06-16 00:54:45.304+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`worked_with`]->(n2:`Actor`) RETURN r1
+2016-06-16 00:54:45.305+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`worked_with`]->(n2:`Actor`) RETURN r1
+2016-06-16 00:54:50.305+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Actor(name) with 2 unique values in sample of avg size 2 taken from index containing 2 entries
+2016-06-16 00:57:31.860+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [110]:  Starting check pointing...
+2016-06-16 00:57:31.861+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [110]:  Starting store flush...
+2016-06-16 00:57:31.880+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 110 to [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2016-06-16 00:57:31.882+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 110 to [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2016-06-16 00:57:31.884+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [110]:  Store flush completed
+2016-06-16 00:57:31.884+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [110]:  Starting appending check point entry into the tx log...
+2016-06-16 00:57:31.884+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [110]:  Appending check point entry into the tx log completed
+2016-06-16 00:57:31.884+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [110]:  Check pointing completed
+2016-06-16 00:57:31.884+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-06-16 00:57:31.884+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-06-16 01:33:16.019+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1638ms.
+2016-06-16 01:58:51.897+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n) WHERE (ID(n) = {ID_n}) WITH n OPTIONAL MATCH (n)-[r]-() DELETE n, r
+2016-06-16 01:58:51.909+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n) WHERE (ID(n) = {ID_n}) WITH n OPTIONAL MATCH (n)-[r]-() DELETE n, r
+2016-06-16 01:58:52.010+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Actor(name) with 0 unique values in sample of avg size 0 taken from index containing 0 entries
+2016-06-16 01:58:54.040+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [112]:  Starting check pointing...
+2016-06-16 01:58:54.040+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [112]:  Starting store flush...
+2016-06-16 01:58:54.055+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 112 to [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2016-06-16 01:58:54.056+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 112 to [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2016-06-16 01:58:54.058+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [112]:  Store flush completed
+2016-06-16 01:58:54.058+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [112]:  Starting appending check point entry into the tx log...
+2016-06-16 01:58:54.058+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [112]:  Appending check point entry into the tx log completed
+2016-06-16 01:58:54.059+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [112]:  Check pointing completed
+2016-06-16 01:58:54.059+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-06-16 01:58:54.059+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-06-16 01:59:02.010+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Actor(uuid) with 0 unique values in sample of avg size 0 taken from index containing 0 entries
+2016-06-16 01:59:02.072+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Actor`) RETURN n
+2016-06-16 01:59:02.074+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Actor`) RETURN n
+2016-06-16 01:59:08.310+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (result:`Actor`) WHERE (result.name = {result_name}) RETURN COUNT(result) AS count
+2016-06-16 01:59:08.312+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (result:`Actor`) WHERE (result.name = {result_name}) RETURN COUNT(result) AS count
+2016-06-16 01:59:10.518+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Actor`) RETURN n
+2016-06-16 01:59:10.519+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Actor`) RETURN n
+2016-06-16 01:59:12.009+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Actor(name) with 1 unique values in sample of avg size 1 taken from index containing 1 entries
+2016-06-16 01:59:15.266+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (result:`Actor`) WHERE (result.name = {result_name}) RETURN COUNT(result) AS count
+2016-06-16 01:59:15.268+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (result:`Actor`) WHERE (result.name = {result_name}) RETURN COUNT(result) AS count
+2016-06-16 01:59:16.967+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`acted_in`]->(n2:`Movie`) RETURN r1
+2016-06-16 01:59:16.968+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`acted_in`]->(n2:`Movie`) RETURN r1
+2016-06-16 01:59:22.009+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Actor(uuid) with 2 unique values in sample of avg size 2 taken from index containing 2 entries
+2016-06-16 01:59:23.166+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 01:59:23.168+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 01:59:32.011+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Actor(name) with 2 unique values in sample of avg size 2 taken from index containing 2 entries
+2016-06-16 02:03:54.140+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [114]:  Starting check pointing...
+2016-06-16 02:03:54.141+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [114]:  Starting store flush...
+2016-06-16 02:03:54.161+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 114 to [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2016-06-16 02:03:54.163+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 114 to [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/andyweiss/Desktop/projects/movies/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2016-06-16 02:03:54.166+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [114]:  Store flush completed
+2016-06-16 02:03:54.166+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [114]:  Starting appending check point entry into the tx log...
+2016-06-16 02:03:54.167+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [114]:  Appending check point entry into the tx log completed
+2016-06-16 02:03:54.167+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [114]:  Check pointing completed
+2016-06-16 02:03:54.167+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-06-16 02:03:54.167+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-06-16 02:06:24.464+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH ()-[r]-() WHERE (ID(r) = {ID_r}) RETURN r LIMIT {limit_1}
+2016-06-16 02:06:24.465+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH ()-[r]-() WHERE (ID(r) = {ID_r}) RETURN r LIMIT {limit_1}
+2016-06-16 02:06:35.737+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`worked_with`]->(n2:`Actor`) RETURN r1
+2016-06-16 02:06:35.738+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`worked_with`]->(n2:`Actor`) RETURN r1
+2016-06-16 02:07:10.004+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`acted_in`]->(n2:`Movie`) RETURN r1
+2016-06-16 02:07:10.005+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`acted_in`]->(n2:`Movie`) RETURN r1
+2016-06-16 02:07:11.193+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Actor`) RETURN n
+2016-06-16 02:07:11.194+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Actor`) RETURN n
+2016-06-16 02:07:12.022+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Actor(name) with 3 unique values in sample of avg size 3 taken from index containing 3 entries
+2016-06-16 02:07:22.021+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Actor(uuid) with 3 unique values in sample of avg size 3 taken from index containing 3 entries
+2016-06-16 02:07:29.304+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 02:07:29.306+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n:`Movie`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-06-16 02:07:29.336+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (movie35) WHERE (ID(movie35) = {ID_movie35}) MATCH (movie35)<-[rel1:`acted_in`]-(a:`Actor`) WHERE (a.uuid <> {actor_uuid}) RETURN a
+2016-06-16 02:07:29.339+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (movie35) WHERE (ID(movie35) = {ID_movie35}) MATCH (movie35)<-[rel1:`acted_in`]-(a:`Actor`) WHERE (a.uuid <> {actor_uuid}) RETURN a
+2016-06-16 02:07:29.384+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH ()-[r]-() WHERE (ID(r) = {ID_r}) RETURN r LIMIT {limit_1}
+2016-06-16 02:07:29.385+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH ()-[r]-() WHERE (ID(r) = {ID_r}) RETURN r LIMIT {limit_1}
+2016-06-16 02:07:33.250+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`worked_with`]->(n2:`Actor`) RETURN r1
+2016-06-16 02:07:33.253+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (n1:`Actor`)-[r1:`worked_with`]->(n2:`Actor`) RETURN r1

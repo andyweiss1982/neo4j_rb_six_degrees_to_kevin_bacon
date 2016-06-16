@@ -1,0 +1,19 @@
+<h1>Find the Shortest Path</h1>
+
+<%= form_tag '/searches' do %>
+
+  <div class="field">
+    <%= label_tag :actor_one, "From" %>
+    <%= select_tag :actor_one, options_from_collection_for_select( @actors, :uuid, :name) %>
+  </div>
+
+  <div class="field">
+    <%= label_tag :actor_two, "To" %>
+    <%= select_tag :actor_two, options_from_collection_for_select( @actors, :uuid, :name) %>
+  </div>
+
+  <div class="actions">
+    <%= submit_tag "Submit" %>
+  </div>
+
+<% end %>
