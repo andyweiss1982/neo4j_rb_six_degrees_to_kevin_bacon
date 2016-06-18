@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root 'acted_ins#index'
+  root 'searches#new'
 
   resources :acted_ins
   resources :movies
