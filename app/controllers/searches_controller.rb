@@ -27,7 +27,8 @@ class SearchesController < ApplicationController
     render :show
   end
 
-  def show
+  def index
+    redirect_to new_search_path
   end
 
   private
